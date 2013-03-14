@@ -1,5 +1,4 @@
 import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
@@ -15,6 +14,7 @@ public class Hello2 {
 
     public void run() {
       // Process KPI
+      this.data.hashCode();
     }
   }
 
@@ -51,6 +51,7 @@ public class Hello2 {
             PMData data = kpiQueue.take();
 
             // process KPI data
+            data.hashCode();
 
           } catch (InterruptedException ex) {
             break;

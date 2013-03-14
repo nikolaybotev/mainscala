@@ -4,7 +4,7 @@ object Other {
 	var x: Int = 20
 	
 	case class Nested() {
-		def fun() { return x }
+		def fun() { return /*x*/ }
 		def fun1(): Long = { return x }
 
     def fun2(): Int = { return x }
